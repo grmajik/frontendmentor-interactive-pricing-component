@@ -294,6 +294,12 @@ input:checked+.slider:before {
     cursor: pointer;
 }
 
+@media only screen and (min-width: 1200px) {
+    .main {
+        background-size: contain;
+    }
+}
+
 @media only screen and (max-width: 620px) {
     .main {
         background-size: 620px 400px;
