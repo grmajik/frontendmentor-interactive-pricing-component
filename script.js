@@ -5,7 +5,7 @@ const input = document.querySelector(".input");
 let pageview = document.querySelector(".pageviews");
 let price = document.querySelector(".price");
 
-knob.addEventListener('click', function () {
+const checkPrice = function () {
     if (input.checked === false) {
         if (knob.value === "1") {
             pageview.textContent = "10K PAGEVIEWS";
@@ -41,4 +41,7 @@ knob.addEventListener('click', function () {
             price.textContent = "$8.00";
         }
     }
-});
+}
+
+input.addEventListener('click', checkPrice);
+knob.addEventListener('click', checkPrice);
