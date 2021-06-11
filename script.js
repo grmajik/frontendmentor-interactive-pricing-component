@@ -26,19 +26,19 @@ const checkPrice = function () {
     } else {
         if (knob.value === "1") {
             pageview.textContent = "10K PAGEVIEWS";
-            price.textContent = "$2.00";
+            price.textContent = "$6.00";
         } else if (knob.value === "2") {
             pageview.textContent = "50K PAGEVIEWS";
-            price.textContent = "$3.00";
+            price.textContent = "$9.00";
         } else if (knob.value === "3") {
             pageview.textContent = "100K PAGEVIEWS";
-            price.textContent = "$4.00"
+            price.textContent = "$12.00"
         } else if (knob.value === "4") {
             pageview.textContent = "500K PAGEVIEWS";
-            price.textContent = "$6.00";
+            price.textContent = "$18.00";
         } else if (knob.value === "5") {
             pageview.textContent = "1M PAGEVIEWS";
-            price.textContent = "$8.00";
+            price.textContent = "$24.00";
         }
     }
 }
