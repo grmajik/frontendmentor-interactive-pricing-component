@@ -30,14 +30,14 @@ body {
 .main {
     background-color: hsl(230, 100%, 99%);
     background-image: url(images/bg-pattern.svg);
-    background-size: contain;
+    background-size: 1440px 500px;
     background-position: center top;
     background-repeat: no-repeat;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .row-1 {
@@ -92,6 +92,7 @@ body {
 }
 
 .component {
+    margin-top: 50px;
     background-color: white;
     width: 600px;
     height: 400px;
@@ -294,6 +295,9 @@ input:checked+.slider:before {
 }
 
 @media only screen and (max-width: 620px) {
+    .main {
+        background-size: 620px 400px;
+    }
     .component {
         width: 500px;
         height: 600px;
@@ -339,6 +343,9 @@ input:checked+.slider:before {
 }
 
 @media only screen and (max-width: 520px) {
+    .main {
+        background-size: 520px 400px;
+    }
     .text h1 {
         font-size: 24px;
     }
